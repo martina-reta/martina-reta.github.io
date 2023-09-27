@@ -17,6 +17,10 @@
     color: #949e9f;
 }
 
+.nav-div .links ul li a:hover {
+    color: #fff;
+}
+
 .nav-div .links ul li a span {
     color: #02a149;
     font-weight: normal;
