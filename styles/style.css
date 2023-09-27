@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-div {
+    background-color: #353a40;
+    padding: 1%;
+}
+
+.nav-div .links {
+    margin-right: 4em;
+}
+
+.nav-div .links ul li a {
+    text-decoration: none;
+    color: #949e9f;
+}
+
+.nav-div .links ul li a span {
+    color: #02a149;
+    font-weight: normal;
+}
+
+.nav-div ul {
+    list-style-type: none;
+}
+
+.nav-div h5 {
+    font-size: xx-large;
+}
+
+.img-info {
+    position: relative;
+    height: 780px;
+    background-color: aqua;
+    background-image: url(/images/ba1.jpg);
+    background-position: 50% 70%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-0%, -50%);
+    color: #fff;
+    z-index: 2;
+    text-align: right;
+    padding: 0 20px;
+    max-width: 100%;
+    margin-right: 8em;
+    margin-top: 3em;
+}
+
+.img-info h1 {
+    font-size: 49px;
+}
+
+.header .icon {
+    height: 55px;
+    width: 125px;
+}
+
+#boton {
+    background-color: #02a149;
+    color: white;
+}
+
+#boton:hover {
+    background-color: #005727;
+}
