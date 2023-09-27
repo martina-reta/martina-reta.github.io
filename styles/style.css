@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 .nav-div {
     background-color: #353a40;
     padding: 1%;
@@ -17,10 +18,6 @@
     color: #949e9f;
 }
 
-.nav-div .links ul li a:hover {
-    color: #fff;
-}
-
 .nav-div .links ul li a span {
     color: #02a149;
     font-weight: normal;
@@ -31,7 +28,7 @@
 }
 
 .nav-div h5 {
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .img-info {
@@ -44,6 +41,10 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+.cosas {
+    padding-top: 18%;
+    padding-right: 8%;
+}
 
 .overlay {
     position: absolute;
@@ -55,18 +56,13 @@
     z-index: 1;
 }
 
-.info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-0%, -50%);
+.container {
+    position: relative;
     color: #fff;
     z-index: 2;
     text-align: right;
-    padding: 0 20px;
     max-width: 100%;
-    margin-right: 8em;
-    margin-top: 3em;
+    padding-right: 50px;
 }
 
 .img-info h1 {
@@ -85,4 +81,36 @@
 
 #boton:hover {
     background-color: #005727;
+}
+
+@keyframes expand-down {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+
+    to {
+        max-height: 200px;
+        opacity: 1;
+    }
+}
+
+.menu-container.show {
+    animation: expand-down 0.3s ease-in-out;
+}
+
+@keyframes collapse-up {
+    from {
+        max-height: 200px;
+        opacity: 1;
+    }
+
+    to {
+        max-height: 0;
+        opacity: 0;
+    }
+}
+
+.menu-container.collapsing {
+    animation: collapse-up 0.3s ease-in-out;
 }

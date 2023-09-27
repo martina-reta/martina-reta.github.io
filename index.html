@@ -15,34 +15,38 @@
     <main>
         <section class="header">
             <header>
-                <div>
+                <div class="container-fluid p-0">
                     <nav class="navbar navbar-expand-md navbar-dark nav-div">
-                        <div class="icon ms-5 mb-4">
-                            <img class="ms-5" src="/images/codoacodo.png" alt="icono codo a codo" height="85">
+                        <div class="d-flex justify-content-between mt-3">
+                            <div class="icon ms-5 mb-4">
+                                <img src="/images/codoacodo.png" alt="icono codo a codo" height="70px">
+                            </div>
+                            <div class="nav-titulo mt-3">
+                                <h5 class="ms-1 text-light fw-normal">Conf Bs As</h5>
+                            </div>
                         </div>
-                        <div class="nav-titulo ms-3">
-                            <h5 class="ms-5 text-light fw-normal">Conf Bs As</h5>
-                        </div>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item mx-2">
+                        <div class="menu-container collapse navbar-collapse justify-content-end"
+                            id="navbarSupportedContent" style="max-height: 200px;">
+                            <ul class="navbar-nav me-5 fs-4">
+                                <li class="nav-item me-4">
                                     <a class="nav-link" href="#">La conferencia</a>
                                 </li>
-                                <li class="nav-item mx-2">
+                                <li class="nav-item me-4">
                                     <a class="nav-link" href="#">Los oradores</a>
                                 </li>
-                                <li class="nav-item mx-2">
+                                <li class="nav-item me-4">
                                     <a class="nav-link" href="#">El lugar y la fecha</a>
                                 </li>
-                                <li class="nav-item mx-2">
+                                <li class="nav-item me-4">
                                     <a class="nav-link" href="#">Conviértete en orador</a>
                                 </li>
-                                <li class="nav-item mx-2">
-                                    <a class="nav-link" href="#"><span>Comprar tickets</span></a>
+                                <li class="nav-item me-4">
+                                    <a class="nav-link text-success" href="#"><span>Comprar tickets</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -50,41 +54,38 @@
                 </div>
             </header>
         </section>
-        <section class="about">
+        <section class="about bg-dark text-white">
             <div class="img-info">
                 <div class="overlay"></div>
-                <div class="info text-wrap">
-                    <h1 class="fw-semibold">Conf Bs As</h1>
-                    <p class="fw-normal fs-4">Bs As llega por primera vez a Argentina. Un evento para
-                        compartir
-                        con
-                        nuestra comunidad al
-                        conocimiento y experiencia de los expertos que están creando el futuro de Internet.
-                        Ven
-                        a
-                        conocer a miembros
-                        del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que
-                        tenemos
-                        para ti. Te esperamos!
-                    </p>
-                    <div class="botones">
-                        <a href="#" class="btn btn-outline-light fs-4 p-2 me-3">Quiero ser orador</a>
-                        <a href="#" id="boton" class="btn fs-4 p-2">Comprar tickets</a>
+                <div class="container me-xxl-5">
+                    <div class="cosas">
+                        <h1 class="fw-semibold me-5">Conf Bs As</h1>
+                        <p class="fw-semibold fs-4 me-5">Bs As llega por primera vez a Argentina. Un evento para
+                            compartir con <br> nuestra comunidad el conocimiento y experiencia de los expertos que <br>
+                            están creando
+                            el futuro de Internet. Ven a conocer a miembros del <br> evento, a otros estudiantes de Codo
+                            a
+                            Codo y
+                            los oradores de primer <br> nivel que tenemos para ti. Te esperamos!
+                        </p>
+                        <div class="botones me-5">
+                            <a href="#" class="btn btn-outline-light fs-4 p-2 me-3">Quiero ser orador</a>
+                            <a href="#" id="boton" class="btn fs-4 p-2">Comprar tickets</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="content">
-            <div class="speakers text-center mt-4 mb-2">
+            <div class="speakers text-center">
                 <h6 class="fw-light">CONOCE A LOS</h6>
                 <h2 class="fw-semibold fs-1">ORADORES</h2>
             </div>
-            <div class="cards mx-auto">
-                <div class="d-flex flex-wrap justify-content-center ms-5">
-                    <div class="col-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card" style="width: 26.5rem;">
                             <img src="/images/steve.jpg" class="card-img-top img-fluid" alt="Steve">
-
                             <div class="card-body">
                                 <div class="tags mb-3">
                                     <a class="btn btn-warning text-dark p-1 fw-bold" href="#">Javascript</a>
@@ -98,7 +99,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card" style="width: 25.7rem;">
                             <img src="/images/bill.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
@@ -114,7 +115,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card" style="width: 25.7rem;">
                             <img src="/images/ada.jpeg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
@@ -135,12 +136,31 @@
             </div>
         </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-iynkIf2eF7CynAU/Ih7HJ7l6z/PIm9Pa0c/rm3/ZlKsAbZHI9wiJU5wrZSLwS5rF8"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-yu2h8mWuAUNspqOE0gMDPzwhI6yYq61CJ6XzrYwNY8kcrks9WOJGcAFrSkFy7VgTo"
-        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbarToggle = document.querySelector('.navbar-toggler');
+            var targetId = navbarToggle.getAttribute('data-bs-target');
+            var target = document.querySelector(targetId);
+            console.log(navbarToggle, target);
+
+            navbarToggle.addEventListener('click', function () {
+                navbarToggle.classList.toggle('collapsed');
+                target.classList.toggle('show');
+
+                if (target.classList.contains('show')) {
+                    target.style.maxHeight = target.scrollHeight + 'px';
+                } else {
+                    target.style.transition = 'max-height 0.3s ease-out';
+                    target.style.maxHeight = '0';
+
+                    target.addEventListener('transitionend', function () {
+                        target.style.transition = '';
+                        target.style.maxHeight = null;
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
