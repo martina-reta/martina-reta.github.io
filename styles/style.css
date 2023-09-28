@@ -112,16 +112,12 @@
     }
 }
 
-.menu-container.collapsing {
-    animation: collapse-up 0.3s ease-in-out;
-}
-
 .card {
     max-width: 100%;
 }
 
-@media (min-width: 466px) {
+@media (min-width: 516rem) {
     .card {
-        max-width: calc(33.333% - 1rem);
+        max-width: calc(50% - 1rem);
     }
 }
