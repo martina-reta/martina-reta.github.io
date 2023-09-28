@@ -41,6 +41,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
 .cosas {
     padding-top: 18%;
     padding-right: 8%;
@@ -113,4 +114,14 @@
 
 .menu-container.collapsing {
     animation: collapse-up 0.3s ease-in-out;
+}
+
+.card {
+    max-width: 100%;
+}
+
+@media (min-width: 466px) {
+    .card {
+        max-width: calc(33.333% - 1rem);
+    }
 }
