@@ -105,7 +105,7 @@
         max-height: 200px;
         opacity: 1;
     }
-
+    
     to {
         max-height: 0;
         opacity: 0;
