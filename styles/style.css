@@ -75,6 +75,45 @@
     width: 125px;
 }
 
+.contact .pieTitulo .ignite {
+    border-bottom: 2px dotted #000;
+    text-decoration: none;
+    color: #000000;
+}
+
+footer {
+    background-color: #1d465c;
+    padding: 2em;
+    margin-top: 2em;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+@media (max-width: 767px) {
+    footer ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    footer ul {
+        justify-content: space-between;
+    }
+}
+
+
 #boton {
     background-color: #02a149;
     color: white;
@@ -105,7 +144,7 @@
         max-height: 200px;
         opacity: 1;
     }
-    
+
     to {
         max-height: 0;
         opacity: 0;
