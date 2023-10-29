@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Comprar</title>
+</head>
+
+<body>
+    <div class="mainTickets">
+        <nav class="navbar navbar-expand-md navbar-dark nav-div align-content-center justify-content-between">
+            <div class="d-flex mt-3">
+                <div class="icon ms-5 mb-4">
+                    <img src="images/codoacodo.png" alt="icono codo a codo" height="70px">
+                </div>
+                <div class="nav-titulo mt-3">
+                    <h5 class="ms-1 text-light fw-normal">Conf Bs As</h5>
+                </div>
+            </div>
+            <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="menu-container collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-5 fs-4">
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">La conferencia</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">Los oradores</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">Conviértete en orador</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="nav-link text-success" href="#tickets"><span>Comprar tickets</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="tickets d-flex justify-content-center m-5">
+            <div class="student border border-info p-3">
+                <h3>Estudiante</h3>
+                <p>Tienen un descuento</p>
+                <strong>80%</strong>
+                <p class="documentacion">* presentar documentación</p>
+            </div>
+            <div class="trainee border border-success p-3">
+                <h3>Trainee</h3>
+                <p>Tienen un descuento</p>
+                <strong>50%</strong>
+                <p class="documentacion">* presentar documentación</p>
+            </div>
+            <div class="junior border border-warning p-3">
+                <h3>Junior</h3>
+                <p>Tienen un descuento</p>
+                <strong>15%</strong>
+                <p class="documentacion">* presentar documentación</p>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="subtitulos text-center mt-2 fw-medium">
+                <h6 class="fw-normal">VENTA</h6>
+                <h2 class="fw-semibold fs-1">VALOR DEL TICKET $200</h2>
+            </div>
+            <div class="container w-50">
+                <form action="post">
+                    <div class="d-flex">
+                        <input placeholder="Nombre" aria-required="true" type="text" name="nombre" id="nombre"
+                            class="form-control" required>
+                        <input placeholder="Apellido" aria-required="true" type="text" name="apellido" id="apellido"
+                            class="form-control" required>
+                    </div>
+                    <input placeholder="Correo" aria-required="true" type="email" name="email" id="email"
+                        class="form-control" required>
+                    <div class="d-flex">
+                        <input class="btn btn-success w-100" type="submit" value="Borrar">
+                        <input class="btn btn-success w-100" type="submit" value="Resumen">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <ul class="d-flex justify-content-between mt-3">
+                    <li><a class="text-decoration-none text-light" href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#">Prensa</a></li>
+                    <li><a href="#">Conferencias</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Estudiantes</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+</body>
+
+</html>
